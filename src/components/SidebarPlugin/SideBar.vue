@@ -1,14 +1,8 @@
 <template>
-  <div
-    class="sidebar"
-    :data="backgroundColor"
-  >
+  <div class="sidebar" :data="backgroundColor">
     <div class="sidebar-wrapper text-left">
       <div class="logo">
-        <a
-          href="javascript:void(0)"
-          class="simple-text logo-mini"
-        >
+        <a href="javascript:void(0)" class="simple-text logo-mini">
           {{ abv }}
         </a>
 

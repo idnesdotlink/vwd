@@ -48,19 +48,11 @@
             </slot>
           </div>
 
-          <div
-            v-if="$slots.default"
-            class="modal-body"
-            :class="bodyClasses"
-          >
+          <div v-if="$slots.default" class="modal-body" :class="bodyClasses">
             <slot />
           </div>
 
-          <div
-            v-if="$slots.footer"
-            class="modal-footer"
-            :class="footerClasses"
-          >
+          <div v-if="$slots.footer" class="modal-footer" :class="footerClasses">
             <slot name="footer" />
           </div>
         </div>

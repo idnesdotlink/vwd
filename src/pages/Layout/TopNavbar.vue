@@ -9,20 +9,13 @@
           class="navbar-toggle d-inline"
           :class="{ toggled: $sidebar.showSidebar }"
         >
-          <button
-            type="button"
-            class="navbar-toggler"
-            @click="toggleSidebar"
-          >
+          <button type="button" class="navbar-toggler" @click="toggleSidebar">
             <span class="navbar-toggler-bar bar1" />
             <span class="navbar-toggler-bar bar2" />
             <span class="navbar-toggler-bar bar3" />
           </button>
         </div>
-        <a
-          class="navbar-brand"
-          href="javascript:void(0)"
-        > {{ $route.name }}</a>
+        <a class="navbar-brand" href="javascript:void(0)"> {{ $route.name }}</a>
       </div>
       <button
         class="navbar-toggler"
@@ -37,18 +30,9 @@
         <span class="navbar-toggler-bar navbar-kebab" />
         <span class="navbar-toggler-bar navbar-kebab" />
       </button>
-      <div
-        v-show="showMenu"
-        class="collapse navbar-collapse show text-left"
-      >
-        <ul
-          class="navbar-nav"
-          :class="$rtl.isRTL ? 'mr-auto' : 'ml-auto'"
-        >
-          <li
-            class="search-bar input-group"
-            @click="searchModalVisible = true"
-          >
+      <div v-show="showMenu" class="collapse navbar-collapse show text-left">
+        <ul class="navbar-nav" :class="$rtl.isRTL ? 'mr-auto' : 'ml-auto'">
+          <li class="search-bar input-group" @click="searchModalVisible = true">
             <button
               id="search-button"
               class="btn btn-link"
@@ -73,7 +57,7 @@
               type="text"
               class="form-control"
               placeholder="SEARCH"
-            >
+            />
           </modal>
           <drop-down>
             <a
@@ -89,48 +73,36 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-right dropdown-navbar">
               <li class="nav-link">
-                <a
-                  href="#"
-                  class="nav-item dropdown-item"
-                >Mike John responded to your email</a>
+                <a href="#" class="nav-item dropdown-item"
+                  >Mike John responded to your email</a
+                >
               </li>
               <li class="nav-link">
-                <a
-                  href="javascript:void(0)"
-                  class="nav-item dropdown-item"
-                >You have 5 more tasks</a>
+                <a href="javascript:void(0)" class="nav-item dropdown-item"
+                  >You have 5 more tasks</a
+                >
               </li>
               <li class="nav-link">
-                <a
-                  href="javascript:void(0)"
-                  class="nav-item dropdown-item"
-                >Your friend Michael is in town</a>
+                <a href="javascript:void(0)" class="nav-item dropdown-item"
+                  >Your friend Michael is in town</a
+                >
               </li>
               <li class="nav-link">
-                <a
-                  href="javascript:void(0)"
-                  class="nav-item dropdown-item"
-                >Another notification</a>
+                <a href="javascript:void(0)" class="nav-item dropdown-item"
+                  >Another notification</a
+                >
               </li>
               <li class="nav-link">
-                <a
-                  href="javascript:void(0)"
-                  class="nav-item dropdown-item"
-                >Another one</a>
+                <a href="javascript:void(0)" class="nav-item dropdown-item"
+                  >Another one</a
+                >
               </li>
             </ul>
           </drop-down>
           <drop-down>
-            <a
-              href="#"
-              class="dropdown-toggle nav-link"
-              data-toggle="dropdown"
-            >
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
               <div class="photo">
-                <img
-                  src="@/assets/img/anime3.png"
-                  alt="Profile Photo"
-                >
+                <img src="@/assets/img/anime3.png" alt="Profile Photo" />
               </div>
               <b class="caret d-none d-lg-block d-xl-block" />
               <p class="d-lg-none">
@@ -139,23 +111,20 @@
             </a>
             <ul class="dropdown-menu dropdown-navbar">
               <li class="nav-link">
-                <a
-                  href="javascript:void(0)"
-                  class="nav-item dropdown-item"
-                >Profile</a>
+                <a href="javascript:void(0)" class="nav-item dropdown-item"
+                  >Profile</a
+                >
               </li>
               <li class="nav-link">
-                <a
-                  href="javascript:void(0)"
-                  class="nav-item dropdown-item"
-                >Settings</a>
+                <a href="javascript:void(0)" class="nav-item dropdown-item"
+                  >Settings</a
+                >
               </li>
               <li class="dropdown-divider" />
               <li class="nav-link">
-                <a
-                  href="javascript:void(0)"
-                  class="nav-item dropdown-item"
-                >Log out</a>
+                <a href="javascript:void(0)" class="nav-item dropdown-item"
+                  >Log out</a
+                >
               </li>
             </ul>
           </drop-down>

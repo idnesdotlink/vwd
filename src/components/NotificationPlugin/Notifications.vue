@@ -1,9 +1,6 @@
 <template>
   <div class="notifications">
-    <transition-group
-      :name="transitionName"
-      :mode="transitionMode"
-    >
+    <transition-group :name="transitionName" :mode="transitionMode">
       <notification
         v-for="notification in notifications"
         :key="notification.timestamp.getTime()"

@@ -1,29 +1,17 @@
 <template>
-  <table
-    class="table tablesorter"
-    :class="tableClass"
-  >
+  <table class="table tablesorter" :class="tableClass">
     <thead :class="theadClasses">
       <tr>
         <slot name="columns">
-          <th
-            v-for="column in columns"
-            :key="column"
-          >
+          <th v-for="column in columns" :key="column">
             {{ column }}
           </th>
         </slot>
       </tr>
     </thead>
     <tbody :class="tbodyClasses">
-      <tr
-        v-for="(item, index) in computedData"
-        :key="index"
-      >
-        <td
-          v-for="(value, index2) in item"
-          :key="index2"
-        >
+      <tr v-for="(item, index) in computedData" :key="index">
+        <td v-for="(value, index2) in item" :key="index2">
           {{ value }}
         </td>
       </tr>
@@ -71,8 +59,8 @@ export default {
     computedData: function() {
       const columns = _.map(this.columns, column => column.toLowerCase());
       const items = _.map(this.data, item => item);
-      console.log({data: this.data});
-      console.log({columns: this.columns, v: this.$parent});
+      console.log({ data: this.data });
+      console.log({ columns: this.columns, v: this.$parent });
       // const items =  _.map(this.data, data => {
 
       // });

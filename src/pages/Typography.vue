@@ -48,8 +48,8 @@
                 culture. I am the nucleus. I think that’s a responsibility that
                 I have, to push possibilities, to show people, this is the level
                 that things could be at."
-                <br>
-                <br>
+                <br />
+                <br />
                 <small>
                   - Noaa
                 </small>
@@ -102,7 +102,7 @@
             <h2>
               <span>Small Tag</span>
               Header with small subtitle
-              <br>
+              <br />
               <small>Use "small" tag for the headers</small>
             </h2>
           </div>

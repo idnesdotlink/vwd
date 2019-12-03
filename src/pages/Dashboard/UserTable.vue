@@ -15,7 +15,7 @@ export default {
   },
   computed: {
     table() {
-      console.log({USERTABLEVUE: this.$t("dashboard.usersTable")});
+      console.log({ USERTABLEVUE: this.$t("dashboard.usersTable") });
       return this.$t("dashboard.usersTable");
     }
   }

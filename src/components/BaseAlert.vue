@@ -6,10 +6,7 @@
     role="alert"
   >
     <slot v-if="!dismissible" />
-    <div
-      v-else
-      class="container"
-    >
+    <div v-else class="container">
       <slot />
       <slot name="dismiss-icon">
         <button

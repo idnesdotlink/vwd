@@ -5,10 +5,7 @@
         <card type="chart">
           <template slot="header">
             <div class="row">
-              <div
-                class="col-sm-6"
-                :class="isRTL ? 'text-right' : 'text-left'"
-              >
+              <div class="col-sm-6" :class="isRTL ? 'text-right' : 'text-left'">
                 <template v-if="!isRTL">
                   <h5 class="card-category">
                     Total Shipments
@@ -50,7 +47,7 @@
                         autocomplete="off"
                         :checked="bigLineChart.activeIndex === index"
                         @click="initBigChart(index)"
-                      >
+                      />
                       {{ option }}
                     </label>
                   </template>
@@ -68,7 +65,7 @@
                         autocomplete="off"
                         :checked="bigLineChart.activeIndex === index"
                         @click="initBigChart(index)"
-                      >
+                      />
                       {{ option }}
                     </label>
                   </template>
@@ -89,14 +86,8 @@
       </div>
     </div>
     <div class="row">
-      <div
-        class="col-lg-4"
-        :class="{ 'text-right': isRTL }"
-      >
-        <card
-          type="chart"
-          card-col
-        >
+      <div class="col-lg-4" :class="{ 'text-right': isRTL }">
+        <card type="chart" card-col>
           <template slot="header">
             <h5 class="card-category">
               {{ $t("dashboard.totalShipments") }}
@@ -116,10 +107,7 @@
         </card>
       </div>
       <div class="col-lg-4">
-        <card
-          type="chart"
-          card-col
-        >
+        <card type="chart" card-col>
           <template slot="header">
             <h5 class="card-category">
               {{ $t("dashboard.dailySales") }}
@@ -138,10 +126,7 @@
         </card>
       </div>
       <div class="col-lg-4">
-        <card
-          type="chart"
-          card-col
-        >
+        <card type="chart" card-col>
           <template slot="header">
             <h5 class="card-category">
               {{ $t("dashboard.completedTasks") }}
@@ -179,10 +164,7 @@
                 Today
               </p>
             </template>
-            <drop-down
-              tag="div"
-              :class="isRTL ? 'float-left' : ''"
-            >
+            <drop-down tag="div" :class="isRTL ? 'float-left' : ''">
               <button
                 aria-label="Settings menu"
                 data-toggle="dropdown"
@@ -192,18 +174,9 @@
                 <i class="tim-icons icon-settings-gear-63" />
               </button>
               <ul class="dropdown-menu dropdown-menu-right">
-                <a
-                  href="#pablo"
-                  class="dropdown-item"
-                >Action</a>
-                <a
-                  href="#pablo"
-                  class="dropdown-item"
-                >Another Action</a>
-                <a
-                  href="#pablo"
-                  class="dropdown-item"
-                >Something else</a>
+                <a href="#pablo" class="dropdown-item">Action</a>
+                <a href="#pablo" class="dropdown-item">Another Action</a>
+                <a href="#pablo" class="dropdown-item">Something else</a>
               </ul>
             </drop-down>
           </template>
@@ -214,10 +187,7 @@
       </div>
       <div class="col-lg-6 col-md-12">
         <card class="card">
-          <h4
-            slot="header"
-            class="card-title"
-          >
+          <h4 slot="header" class="card-title">
             <template v-if="!isRTL">
               Simple Table
             </template>

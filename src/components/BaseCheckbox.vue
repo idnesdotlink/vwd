@@ -1,19 +1,13 @@
 <template>
-  <div
-    class="form-check"
-    :class="[{ disabled: disabled }, inlineClass]"
-  >
-    <label
-      :for="cbId"
-      class="form-check-label"
-    >
+  <div class="form-check" :class="[{ disabled: disabled }, inlineClass]">
+    <label :for="cbId" class="form-check-label">
       <input
         :id="cbId"
         v-model="model"
         class="form-check-input"
         type="checkbox"
         :disabled="disabled"
-      >
+      />
       <span class="form-check-sign" />
       <slot>
         <span v-if="inline">&nbsp;</span>

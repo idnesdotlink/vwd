@@ -1,25 +1,10 @@
 <template>
-  <div
-    v-click-outside="closeDropDown"
-    class="fixed-plugin"
-  >
-    <div
-      class="dropdown show-dropdown"
-      :class="{ show: isOpen }"
-    >
-      <a
-        data-toggle="dropdown"
-        class="settings-icon"
-      >
-        <i
-          class="fa fa-cog fa-2x"
-          @click="toggleDropDown"
-        />
+  <div v-click-outside="closeDropDown" class="fixed-plugin">
+    <div class="dropdown show-dropdown" :class="{ show: isOpen }">
+      <a data-toggle="dropdown" class="settings-icon">
+        <i class="fa fa-cog fa-2x" @click="toggleDropDown" />
       </a>
-      <ul
-        class="dropdown-menu"
-        :class="{ show: isOpen }"
-      >
+      <ul class="dropdown-menu" :class="{ show: isOpen }">
         <li class="header-title">
           Sidebar Background
         </li>
@@ -44,7 +29,8 @@
             href="https://www.creative-tim.com/product/vue-white-dashboard"
             target="_blank"
             class="btn btn-primary btn-block btn-round"
-          >Download Now</a>
+            >Download Now</a
+          >
           <a
             href="https://demos.creative-tim.com/vue-white-dashboard/documentation"
             target="_blank"

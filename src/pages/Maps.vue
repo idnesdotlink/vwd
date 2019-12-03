@@ -6,10 +6,7 @@
           Google Maps
         </h4>
       </template>
-      <div
-        id="map"
-        class="map"
-      />
+      <div id="map" class="map" />
     </card>
   </div>
 </template>

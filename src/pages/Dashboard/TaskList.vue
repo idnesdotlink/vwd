@@ -1,8 +1,5 @@
 <template>
-  <base-table
-    :data="tableData"
-    thead-classes="text-primary"
-  >
+  <base-table :data="tableData" thead-classes="text-primary">
     <template v-slot="{ row }">
       <td>
         <base-checkbox v-model="row.done" />
@@ -16,10 +13,7 @@
         </p>
       </td>
       <td class="td-actions text-right">
-        <base-button
-          type="link"
-          artia-label="edit button"
-        >
+        <base-button type="link" artia-label="edit button">
           <i class="tim-icons icon-pencil" />
         </base-button>
       </td>
@@ -40,7 +34,7 @@ export default {
 
   computed: {
     tableData() {
-      console.log({TASKLISTVUE: this.$t("dashboard.taskList")});
+      console.log({ TASKLISTVUE: this.$t("dashboard.taskList") });
       return this.$t("dashboard.taskList");
     }
   }

@@ -7,18 +7,12 @@
     }"
   >
     <slot name="label">
-      <label
-        v-if="label"
-        class="control-label"
-      >
+      <label v-if="label" class="control-label">
         {{ label }}
       </label>
     </slot>
     <slot name="addonLeft">
-      <span
-        v-if="addonLeftIcon"
-        class="input-group-prepend"
-      >
+      <span v-if="addonLeftIcon" class="input-group-prepend">
         <div class="input-group-text">
           <i :class="addonLeftIcon" />
         </div>
@@ -31,13 +25,10 @@
         class="form-control"
         aria-describedby="addon-right addon-left"
         v-on="listeners"
-      >
+      />
     </slot>
     <slot name="addonRight">
-      <span
-        v-if="addonRightIcon"
-        class="input-group-append"
-      >
+      <span v-if="addonRightIcon" class="input-group-append">
         <div class="input-group-text">
           <i :class="addonRightIcon" />
         </div>

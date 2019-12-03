@@ -12,11 +12,7 @@
     <div class="container">
       <slot name="container-pre" />
       <slot name="brand">
-        <a
-          class="navbar-brand"
-          href="#"
-          @click.prevent="onTitleClick"
-        >
+        <a class="navbar-brand" href="#" @click.prevent="onTitleClick">
           {{ title }}
         </a>
       </slot>
@@ -35,10 +31,7 @@
         :class="{ show: toggled }"
       >
         <div class="navbar-collapse-header">
-          <slot
-            name="content-header"
-            :close-menu="closeMenu"
-          />
+          <slot name="content-header" :close-menu="closeMenu" />
         </div>
         <slot :close-menu="closeMenu" />
       </div>

@@ -59,11 +59,7 @@
 
     <div class="row">
       <div class="col-md-4 pr-md-1 text-left">
-        <base-input
-          v-model="model.city"
-          label="City"
-          placeholder="City"
-        />
+        <base-input v-model="model.city" label="City" placeholder="City" />
       </div>
       <div class="col-md-4 px-md-1 text-left">
         <base-input
@@ -73,10 +69,7 @@
         />
       </div>
       <div class="col-md-4 pl-md-1 text-left">
-        <base-input
-          label="Postal Code"
-          placeholder="ZIP Code"
-        />
+        <base-input label="Postal Code" placeholder="ZIP Code" />
       </div>
     </div>
     <div class="row">
@@ -94,10 +87,7 @@
       </div>
     </div>
     <template slot="footer">
-      <base-button
-        type="success"
-        fill
-      >
+      <base-button type="success" fill>
         Save
       </base-button>
     </template>

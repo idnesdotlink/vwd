@@ -79,10 +79,7 @@
     </side-bar>
     <sidebar-share :background-color.sync="backgroundColor" />
 
-    <div
-      class="main-panel"
-      :data="backgroundColor"
-    >
+    <div class="main-panel" :data="backgroundColor">
       <top-navbar />
 
       <dashboard-content @click.native="toggleSidebar" />

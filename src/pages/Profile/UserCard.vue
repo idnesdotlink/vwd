@@ -6,11 +6,7 @@
       <div class="block block-three" />
       <div class="block block-four" />
       <a href="#">
-        <img
-          class="avatar"
-          src="../../assets/img/anime6.png"
-          alt="..."
-        >
+        <img class="avatar" src="../../assets/img/anime6.png" alt="..." />
         <h5 class="title">{{ user.fullName }}</h5>
       </a>
       <p class="description">
@@ -20,29 +16,14 @@
     <p class="card-description">
       {{ user.description }}
     </p>
-    <div
-      slot="footer"
-      class="button-container"
-    >
-      <base-button
-        icon
-        round
-        class="btn-facebook"
-      >
+    <div slot="footer" class="button-container">
+      <base-button icon round class="btn-facebook">
         <i class="fab fa-facebook" />
       </base-button>
-      <base-button
-        icon
-        round
-        class="btn-twitter"
-      >
+      <base-button icon round class="btn-twitter">
         <i class="fab fa-twitter" />
       </base-button>
-      <base-button
-        icon
-        round
-        class="btn-google"
-      >
+      <base-button icon round class="btn-google">
         <i class="fab fa-google-plus" />
       </base-button>
     </div>

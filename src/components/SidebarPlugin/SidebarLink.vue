@@ -1,10 +1,5 @@
 <template>
-  <component
-    :is="tag"
-    v-bind="$attrs"
-    class="nav-item"
-    tag="li"
-  >
+  <component :is="tag" v-bind="$attrs" class="nav-item" tag="li">
     <a class="nav-link">
       <slot>
         <i />

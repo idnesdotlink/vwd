@@ -23,26 +23,13 @@
       <i class="tim-icons icon-simple-remove" />
     </button>
 
-    <span
-      v-if="icon"
-      data-notify="icon"
-      :class="['alert-icon', icon]"
-    />
+    <span v-if="icon" data-notify="icon" :class="['alert-icon', icon]" />
     <div data-notify="message">
-      <div
-        v-if="title"
-        class="title"
-      >
-        <b>{{ title }}<br></b>
+      <div v-if="title" class="title">
+        <b>{{ title }}<br /></b>
       </div>
-      <div
-        v-if="message"
-        v-html="message"
-      />
-      <content-render
-        v-if="!message && component"
-        :component="component"
-      />
+      <div v-if="message" v-html="message" />
+      <content-render v-if="!message && component" :component="component" />
     </div>
   </div>
 </template>

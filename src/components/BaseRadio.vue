@@ -3,10 +3,7 @@
     class="form-check form-check-radio"
     :class="[inlineClass, { diabled: disabled }]"
   >
-    <label
-      :for="cbId"
-      class="form-check-label"
-    >
+    <label :for="cbId" class="form-check-label">
       <input
         :id="cbId"
         v-model="model"
@@ -14,7 +11,7 @@
         type="radio"
         :disabled="disabled"
         :value="name"
-      >
+      />
       <slot />
       <span class="form-check-sign" />
     </label>
